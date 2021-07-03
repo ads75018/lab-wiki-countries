@@ -6,7 +6,7 @@ const navbar = () => {
     <nav className="navbar navbar-dark bg-primary mb-3">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          LAB - WikiCountries
+          LAB - WikiCountries by Adam & Karina
         </Link>
       </div>
     </nav>
