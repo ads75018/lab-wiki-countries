@@ -4,18 +4,16 @@ import json from '../countries.json';
 
 export const countriesList = () => {
   return (
-    <div>
-
+    <div className="col-5" style={{ maxHeight: '90vh', overflow: 'scroll' }}>
       {json.map((country, i) => {
         return (
-          <ul>
-            <li>
-              <Link to={`/countries/${country.cca3}`}>{country.cca3}</Link>
-            </li>
-          </ul>
+          <div className="list-group">
+            <Link to={`/countries/${country.cca3}`}>
+              {country.flag} {country.name.common}{' '}
+            </Link>
+          </div>
         );
       })}
     </div>
   );
-}
-
+};
